@@ -67,20 +67,47 @@ h2{
 .text-grey{
     color: grey;
 }
+/* Let's introduce a footer element, that holds the footer list and the copyright.
+*
+*/
+footer {
+    margin: 0 auto; 
+    width: 85%; /* The combination of a width and "margin: 0 auto" horizontally centers the content */
+    /* Learn more about flexbox
+    *  https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+    *  
+    *  This is a litte tutorial to practice flexbox.
+    *  https://flexboxfroggy.com/#de
+    */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .ul-bottom{
     font-family: 'Raleway', sans-serif;
     color: white;
     list-style-type: none;
     display: flex;
-    margin-left: 6.5%;
-    padding: 1%;
-
+    margin: 0;
+    padding: 0;
 }
+
+.ul-bottom > li {
+    padding: 0 1em;
+    margin: .5em 0;
+}
+/* this pseudo selector :first-child lets you style the first element of a list
+*/
+.ul-bottom > li:first-child {
+    padding-left: 0;
+}
+
 #copyright{
     color: white;
-    list-style-type: none;
     text-align: right;
     padding: 0rem;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
 }
 body {background-color: #131415;}
 /* The color of the <hr> element can be changed by using this "hack",
