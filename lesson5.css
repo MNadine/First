@@ -42,13 +42,30 @@ h2{
     list-style-type: none;
     padding: 0rem;
     margin-bottom: 0rem;
-
 }
-.ul-grey{
+/* Target every <li> element, that is a direct decendent of anything,
+*  that has a class ".ul-white".
+*  E.x.:
+*  <ul class="ul-white">
+*    <li> Yeah, I have a margin :) </li>
+*    <li>
+*        <ol>
+*            <li> I don't have a margin :( </li>
+*        </ol>
+*    </li>
+*  </ul> 
+* 
+*/
+.ul-white > li {
+    margin: 0 0 .5em;
+}
+/* You can not have multiple <li> elements inside a <span> elemnent.
+*  Also you basically want to change the color of some <li> elements, 
+*  not the list around the gray items. Let's just use a call called ".text-gray"
+*  and add this class to every <li> element that sould be gray.
+*/
+.text-grey{
     color: grey;
-    list-style-type: none;
-    padding: 0rem;
-    margin-bottom: 0rem;
 }
 .ul-bottom{
     font-family: 'Raleway', sans-serif;
