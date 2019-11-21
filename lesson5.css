@@ -20,6 +20,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Tell the element to use 100% of its available height.
+    *  now "align-items: center" does what you intended.
+    */
+    height: 100%;
   }
 h1{
     font-family: 'Cambo', serif;
