@@ -83,7 +83,10 @@ h2{
     padding: 0rem;
 }
 body {background-color: #131415;}
+/* The color of the <hr> element can be changed by using this "hack",
+*  It's ugly and nobody likes it, but thats how it is :)
+*/
 hr {
-    color: grey;
+    border: 1px solid gray;
     width: 85%;
 }
