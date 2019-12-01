@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto+Condensed:400,700|Roboto:300,400,500&display=swap" rel="stylesheet">
+    <title>Give pets a new Home | Furry Friends</title>
+</head>
+<body>
+    <header> <!-- h2 -->
+        <a href="#"><h2>Furry Friends</h2></a>
+    </header>
+    <main>
+        <section> <!-- Bild -->
+            <img src="./img/undraw_pet_adoption_2qkw.svg" alt="Illustration of a person viewing at a large website projection.">
+        </section>
+        <section> <!-- Give pets a new home + p -->
+                <h1>Give pets a new home</h1>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, 
+                    a large language ocean.
+                </p>
+                <a href="#" class="button secondary">find pets</a>
+        </section>
+        <section> <!-- Donate -->
+        <a href="#" class="button primary">Donate</a>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
+/* :root is the same as html for websites.*/
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Roboto Condensed', sans-serif;
+    --button-font: 'Roboto', sans-serif;
+
+    --color-main: #12121B;
+    --color-primary: #FCEE60;
+    --color-secondary: #F2F2F2;
+}
+
+img {
+width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    font-size: 1.6em;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 2.2em;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-main);
+    font-family: var(--heading-font);
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 /*Gibe pets a new home*/{
+    font-size: 400%;
+}
+
+h2 /*furry Friends*/{
+    font-size: 500%;
+    padding: 0;
+    margin: 0 0 .2em;
+}
+
+.button {
+    text-decoration: none;
+    font-family: var(--button-font);
+    border-radius: 40px;
+    margin: auto;
+    display: flex;
+    width: auto;
+}
+
+.primary /*donate*/{
+    background-color: var(--color-primary);
+    color: var(--color-main);
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
+    margin-bottom: 6rem;
+    width: 80%;
+    height: 100%; /*height doesn't work*/
+}
+
+.secondary /*find pets*/{
+    background-color: var(--color-secondary);
+    color: var(--color-main);
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+    margin-bottom: 10rem;
+    width: 40%;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    font-size: 150%;
+    background-color: #efefef;
+}
